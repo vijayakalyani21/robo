@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    background-color: rgb(186, 117, 109);
+}
+h1{
+    text-align: center;
+}
+html{
+    display: block;
+}
+.head{
+        width: 200px;
+        margin: 0 auto;
+        height: 100px;
+        border-radius: 100px 100px 50px 50px;
+        margin-bottom: 10px;
+        background-color: rgb(222, 144, 76);
+        border-color: black;
+        border-style: solid;
+}
+.robo:hover .head {
+    animation: head 5s;
+  }
+  @keyframes head {
+    0% {
+      width: 200px;
+    }
+    25% {
+      width: 200px;
+    }
+    50% {
+      width: 250px;
+    }
+  }
+.mouth{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        color: black;
+        position: relative;
+        transition: border-radius 1s;
+}
+.robo:hover.mouth {
+  border-radius: 40%;
+  animation: mouth 5s;
+}
+@keyframes head {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 200px;
+  }
+  50% {
+    width: 250px;
+  }
+}
+.eye1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background:linear-gradient(180deg,orange,rgb(113, 22, 22) 50%,rgb(215, 131, 34));left:30px;top:50px;
+    display: inline-block;
+}
+.eye2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background:linear-gradient(180deg,orange,rgb(113, 22, 22) 50%,rgb(215, 131, 34));left:120px;top:50px;
+    display: inline-block;
+}
+.body1{
+    width: 240px;
+    height: 300px;
+    position: relative;
+    border-radius: 30px; 
+    background:linear-gradient(360deg,black 25%,red 25%,white 25%,rgb(211, 143, 16) 25%);left:0px;top:-10px;
+    margin: 0 auto;
+    transition: border-radius 1s;
+    margin-top: 20px;
+    /* border-color: rgb(0,0,0); */
+    /* border-style: solid; */
+    display:flex;
+}
+.robo:hover .body1{
+  border-radius: 40%;
+  animation: body1 2s infinite;
+}
+.hand1{
+  width: 90px;
+  height: 165px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: rgb(211, 143, 16);left:-60px;top:10px;
+  border-color: rgb(0,0,0);
+  border-style: solid;
+  position: relative;
+}
+.robo:hover .hand1 {
+  animation: hand1 2s infinite;
+}
+@keyframes hand1 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
+.hand2{
+  width: 90px;
+  height: 165px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: rgba(211, 143, 16);left:60px;top:10px;
+  border-color: rgb(0,0,0);
+  border-style: solid;
+  position: relative;
+}
+.robo:hover .hand2 {
+  animation: hand2 2s infinite;
+}
+@keyframes hand2 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+  25% {
+    transform: rotate(-90deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+}
+
+.stomach{
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;font-family: cursive;color: rgb(168, 85, 26);
+  transition: border-radius 1s;
+  background-color: silver;
+  background-image: linear-gradient(
+    360deg,
+    black 25%,
+    red 25%,
+    white 25%,
+    rgb(211, 143, 16) 25%
+   );
+}
+
+.robo:hover .stomach {
+  border-radius: 40%;
+  animation: stomach 2s infinite;
+}
+
+.body2{ 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.leg1{
+  width: 40px;
+  height: 120px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(211, 143, 16);top:-50px;left:-10px;
+  position: relative;
+  border-color:black ;
+  border-style: solid;
+  margin-left: 45px;
+}
+.robo:hover .leg1 {
+animation: leg1 2s infinite;
+}
+@keyframes leg1 {
+0% {
+  transform: rotate(0deg);
+}
+25% {
+  transform: rotate(20deg);
+}
+50% {
+  transform: rotate(0deg);
+}
+}
+.leg2 {
+width: 40px;
+height: 120px;
+border-radius: 50%;
+display: inline-block;
+margin-left: 30px;
+background-color: rgb(211, 143, 16);top:-50px;left:10px;
+position: relative;
+border-color:rgb(0, 0, 0) ;
+border-style: solid;
+}
+.robo:hover .leg2 {
+  animation: leg2 2s infinite;
+} 
+@keyframes leg2 {
+0% {
+  transform: rotate(0deg);
+}
+25% {
+  transform: rotate(-20deg);
+}
+50% {
+  transform: rotate(0deg);
+}
+}
